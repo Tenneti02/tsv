@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 TSVS Portfolio
 
-## Getting Started
+A modern, bold portfolio website built with **Next.js**, **Tailwind CSS**, and a NeoBrutalist design aesthetic.
 
-First, run the development server:
+## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- ⌨️ **Typing Animation** — Dynamic hero with role cycling effect
+- 📊 **Animated Skill Bars** — Skills grouped by category with proficiency percentages
+- 📱 **Fully Responsive** — Mobile-first design with hamburger navigation
+- 📬 **Working Contact Form** — Sends emails via Nodemailer
+- 🎨 **Teal/Cyan Accent** — Custom color palette with bold shadows and borders
+- 📄 **Resume Download** — One-click PDF download
+- ⚡ **Smooth Animations** — Scroll-triggered reveal effects throughout
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| [Next.js](https://nextjs.org/) | React framework (App Router) |
+| [Tailwind CSS v4](https://tailwindcss.com/) | Utility-first styling |
+| [TypeScript](https://www.typescriptlang.org/) | Type safety |
+| [Nodemailer](https://nodemailer.com/) | Contact form emails |
+| [Remix Icons](https://remixicon.com/) | Icon library |
+
+## 📁 Project Structure
+
+```
+mee/
+├── app/
+│   ├── api/contact/    # Contact form API route
+│   ├── globals.css     # Theme colors & animations
+│   ├── layout.tsx      # Root layout & metadata
+│   └── page.tsx        # Main page
+├── components/
+│   ├── Hero.tsx        # Hero section with typing effect
+│   ├── About.tsx       # About me + education
+│   ├── Skills.tsx      # Animated skill bars
+│   ├── Experience.tsx  # Work experience timeline
+│   ├── Projects.tsx    # Project showcase
+│   ├── Contact.tsx     # Contact form
+│   ├── Navbar.tsx      # Navigation + mobile menu
+│   ├── Footer.tsx      # Footer with socials
+│   └── Reveal.tsx      # Scroll animation wrapper
+├── public/
+│   └── Assets/         # Images & resume
+└── package.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Install dependencies
+npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Create .env.local for contact form
+echo "EMAIL_USER=your-email@gmail.com" >> .env.local
+echo "EMAIL_PASS=your-google-app-password" >> .env.local
 
-## Learn More
+# Run development server
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📬 Contact Form Setup
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The contact form uses **Nodemailer** with Gmail. To enable it:
 
-## Deploy on Vercel
+1. Enable [2-Step Verification](https://myaccount.google.com/security) on your Google account
+2. Generate an [App Password](https://myaccount.google.com/apppasswords)
+3. Add credentials to `.env.local`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📄 License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+**Built with ☕ + Next.js from Visakhapatnam** by [T S V Subrahmanyam](https://www.linkedin.com/in/tenneti-surya-venkata-subrahmanyam)
